@@ -17,6 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Branch info :
 - Main (Chapter-1) : Material App and Scaffold
-- Chapter-2 : BoxDecoration, BoxShadow, TextStyle 
+- Chapter-2 : Container, Text, BoxDecoration, BoxShadow, TextStyle 
 - Chapter-3 : Row and Column Tags
-- Chapter-4 : Navigation Drawer and Floating Action Button
+- Chapter-4 : Navigation Drawer, Floating Action Button, ListView 
