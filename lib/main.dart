@@ -23,40 +23,41 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-      title: Text("Awesome App"),
+        title: Text("Awesome App"),
       ),
-          body: Center(
-            child: Container(
-              padding: const EdgeInsets.all(8),
-              width: 100,
-              height: 100,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
+      body: Container(
+        height: 300,
+        color: Colors.teal,
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Container(
+                padding: const EdgeInsets.all(8),
+                width: 100,
+                height: 100,
                 color: Colors.red,
-                borderRadius: BorderRadius.circular(10),
-                gradient: LinearGradient(colors: [
-                  Colors.pink,
-                  Colors.yellow,
-                ]),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 10,
-                  )
-                ]
+                alignment: Alignment.center,
               ),
-              child: Text(
-                  "I am a box",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),),
-    ),
+
+              Container(
+                padding: const EdgeInsets.all(8),
+                width: 100,
+                height: 100,
+                color: Colors.yellow,
+                alignment: Alignment.center,
+              ),
+
+              Container(
+                padding: const EdgeInsets.all(8),
+                width: 100,
+                height: 100,
+                color: Colors.green,
+                alignment: Alignment.center,
+              )
+
+            ],
           ),
+      )
     );
   }
 }
-
-
