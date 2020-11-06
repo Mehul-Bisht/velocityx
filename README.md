@@ -21,3 +21,4 @@ samples, guidance on mobile development, and a full API reference.
 - Chapter-3 : Row and Column Tags
 - Chapter-4 : Navigation Drawer, Floating Action Button, ListView 
 - Chapter-5 : Card, ScrollView, Asset Images, TextField
+- Chapter-6 : Organising flutter code
