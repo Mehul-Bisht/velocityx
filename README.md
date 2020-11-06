@@ -1,6 +1,6 @@
 # velocityx
 
-A flutter application that demonstrate basic flutter components.
+A flutter application that demonstrates basic flutter components.
 
 ## Getting Started
 
