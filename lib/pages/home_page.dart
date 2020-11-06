@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:velocityx/utils/Constants.dart';
 import '../drawer.dart';
 import '../name_card_widget.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class MyHomePage extends StatefulWidget {
+  static const String routeName = "/home";
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -34,6 +36,15 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text("Awesome App"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.exit_to_app),
+            onPressed: () {
+              Constants.prefs.setBool("loggedIn", false);
+              Navigator.pop(context);
+            },
+          )
+        ],
       ),
       body: data != null
       ? ListView.builder(
