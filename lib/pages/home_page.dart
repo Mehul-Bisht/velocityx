@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
     fetchData();
   }
 
-  fetchData() async {
+  fetchData()async {
     var res = await http.get(url);
     data = jsonDecode(res.body);
     setState(() {});
@@ -36,8 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Awesome App"),
       ),
       body: data != null
-          ? ListView.builder(
-        itemBuilder: (context,index){
+      ? ListView.builder(
+        itemBuilder: (context, index){
           return ListTile(
             title: Text(data[index]["title"]),
             subtitle: Text("ID : ${data[index]["id"]}"),
@@ -45,10 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
           );
         },
         itemCount: data.length,
-      )
-          : Center(
-              child: CircularProgressIndicator(),
-            ),
+      ) : Center(
+        child: CircularProgressIndicator(),
+      ),
       drawer: MyDrawer(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
