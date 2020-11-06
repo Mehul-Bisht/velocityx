@@ -22,3 +22,4 @@ samples, guidance on mobile development, and a full API reference.
 - Chapter-4 : Navigation Drawer, Floating Action Button, ListView 
 - Chapter-5 : Card, ScrollView, Asset Images, TextField
 - Chapter-6 : Organising flutter code
+- Chapter-7 : Networking with Http
